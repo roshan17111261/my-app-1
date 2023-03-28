@@ -1,24 +1,9 @@
 # raja-app
 
-## Project setup
-```
-npm install
-```
+## node version = v18.14.2
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## npm version = v9.5.0
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## vue/cli version = v5.0.8
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+##  vue version = v2.6.14
