@@ -1,17 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1 v-if="show">Hello {{ name }}</h1> 
+     <h1 v-else>conditional rendering</h1> 
+      <button @click="onClick">toggle</button>
+      
+    <home-component />
+   
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeComponent from './components/HomeComponent.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+     HomeComponent,
+    
+
+  },
+  data(){
+    return{
+        show: true,
+        name: 'roshan'
+    }
+  },
+  methods:{
+    onClick(){
+      this.show=!this.show;
+      
+    }
   }
 }
 </script>
